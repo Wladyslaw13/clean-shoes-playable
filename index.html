@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Очисти ботинки</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="game-container">
+			<img src="assets/bg.webp" alt="Фон" class="bg" />
+			<img
+				src="assets/dirty_shoes.png"
+				alt="Грязные ботинки"
+				class="shoes"
+				id="shoes"
+			/>
+			<canvas id="clean-layer"></canvas>
+			<img src="assets/hand_hint.png" class="hand-hint" alt="Очисти ботинки" />
+			<div class="progress-bar">
+				<div id="progress-fill"></div>
+			</div>
+		</div>
+		<div class="end-screen hidden">
+			<img
+				src="assets/clean_shoes.png"
+				alt="Чистые ботинки"
+				class="clean-shoes"
+			/>
+			<button id="cta-button">
+				<img src="assets/cta_button.webp" alt="Установить" />
+			</button>
+		</div>
+		<img id="mask-image" src="assets/dirty_shoes.png" style="display: none" />
+		<script src="script.js"></script>
+	</body>
+</html>
